@@ -2,8 +2,8 @@
 
 This is a sleek and fully responsive **Pricing Plans** page built using **HTML, CSS, and JavaScript**. Designed as part of a web development internship, this project demonstrates professional layout structure, cross-device responsiveness, and interactive features—all developed without using any frontend frameworks.
 
-🔗 **Live Demo:** [View Live Site](https://your-github-username.github.io/your-repo-name/)  
-https://bilalzafar11.github.io/Responsive-Pricing-Plans-Page/
+🔗 **Live Demo:** [View Live Site](https://bilalzafar11.github.io/Responsive-Pricing-Plans-Page/)  
+
 
 ## 📌 Overview
 
