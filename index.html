@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Plans | Web Developer Internship</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- 🔹 Header Section -->
+  <header class="pricing-header">
+    <div class="container">
+      <h1 class="main-title">Our Plans</h1>
+      <p class="subtitle">Choose the right plan for your growth</p>
+    </div>
+  </header>
+
+  <!-- 🔹 Pricing Toggle Control -->
+  <section class="toggle-section">
+    <div class="container toggle-container">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="billingToggle" aria-label="Toggle Monthly/Yearly Pricing" />
+        <span class="slider"></span>
+      </label>
+      <span>Yearly</span>
+    </div>
+  </section>
+
+  <!-- 🔹 Pricing Cards Section -->
+  <main class="pricing-section">
+    <div class="container">
+      <h2 class="section-heading">Pricing Options</h2>
+
+      <div class="pricing-grid">
+        <!-- ⭐ Starter Plan -->
+        <article class="pricing-card">
+          <h3 class="plan-title">Starter</h3>
+          <p class="plan-price" data-monthly="Free" data-yearly="Free">Free</p>
+          <ul class="plan-features">
+            <li>✔ 1 User Access</li>
+            <li>✔ Basic Support</li>
+            <li>✔ 1 GB Storage</li>
+            <li>✔ Email Alerts</li>
+            <li>✔ Community Access</li>
+          </ul>
+          <button class="plan-btn" aria-label="Choose Starter Plan">Choose Plan</button>
+        </article>
+
+        <!-- ⭐ Professional Plan (Most Popular) -->
+        <article class="pricing-card popular-plan">
+          <div class="badge" aria-hidden="true">Most Popular</div>
+          <h3 class="plan-title">Professional</h3>
+          <p class="plan-price" data-monthly="$49/month" data-yearly="$490/year">$49/month</p>
+          <ul class="plan-features">
+            <li>✔ Up to 5 Users</li>
+            <li>✔ Priority Email Support</li>
+            <li>✔ 10 GB Storage</li>
+            <li>✔ Weekly Reports</li>
+            <li>✔ Advanced Analytics</li>
+          </ul>
+          <button class="plan-btn" aria-label="Choose Professional Plan">Choose Plan</button>
+        </article>
+
+        <!-- ⭐ Premium Plan -->
+        <article class="pricing-card">
+          <h3 class="plan-title">Premium</h3>
+          <p class="plan-price" data-monthly="$99/month" data-yearly="$990/year">$99/month</p>
+          <ul class="plan-features">
+            <li>✔ Unlimited Users</li>
+            <li>✔ 24/7 Chat Support</li>
+            <li>✔ 100 GB Storage</li>
+            <li>✔ Dedicated Manager</li>
+            <li>✔ Full Analytics Suite</li>
+          </ul>
+          <button class="plan-btn" aria-label="Choose Premium Plan">Choose Plan</button>
+        </article>
+
+        <!-- ⭐ Enterprise Plan -->
+        <article class="pricing-card">
+          <h3 class="plan-title">Enterprise</h3>
+          <p class="plan-price" data-monthly="Custom" data-yearly="Custom">Custom</p>
+          <ul class="plan-features">
+            <li>✔ Custom User Limit</li>
+            <li>✔ SLA Support</li>
+            <li>✔ Unlimited Storage</li>
+            <li>✔ Custom Integrations</li>
+            <li>✔ Onboarding + Training</li>
+          </ul>
+          <button class="plan-btn" aria-label="Request Enterprise Quote">Get a Quote</button>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- 🔽 Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top" aria-label="Scroll to top">↑</button>
+
+  <!-- 🔽 Modal -->
+  <div class="modal" id="planModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal" title="Close">&times;</span>
+      <h3 id="modalPlanName">Plan Selected</h3>
+      <p>Thank you for choosing a plan. We'll contact you soon.</p>
+    </div>
+  </div>
+
+  <!-- 🔽 External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
